@@ -10,101 +10,36 @@
 <body>
     <div class="container">
         <div class="control-panel">
-            <header class="app-header">
-                <h1>🎓 大学证件综合生成系统</h1>
-            </header>
-            
-            <div class="form-section">
-                <label for="country-selector">选择国家</label>
-                <select id="country-selector">
-                    <option value="">请先选择一个国家...</option>
-                </select>
-            </div>
-            
-            <div class="form-section">
-                <label for="university-selector">选择大学</label>
-                <select id="university-selector" disabled>
-                    <option value="">请先选择一所大学...</option>
-                </select>
-            </div>
+            <header class="app-header"><h1>🎓 大学证件综合生成系统</h1></header>
+            <div class="form-section"><label for="country-selector">选择国家</label><select id="country-selector"><option value="">请先选择一个国家...</option></select></div>
+            <div class="form-section"><label for="university-selector">选择大学</label><select id="university-selector" disabled><option value="">请先选择一所大学...</option></select></div>
             <div id="main-content-area" class="hidden">
                 <div class="form-separator"></div>
-
                 <div id="common-info-section" class="form-section">
                     <h2 class="form-section-title">通用大学信息</h2>
-                    <div class="form-group">
-                        <label for="universityName">大学名称 (本地语言)</label>
-                        <input type="text" id="universityName" data-bind-to="universityName">
-                    </div>
-                    <div class="form-group">
-                        <label for="universityNameEn">University Name (EN)</label>
-                        <input type="text" id="universityNameEn" data-bind-to="universityNameEn">
-                    </div>
-                    <div class="form-group">
-                        <label for="universityLogo">大学校徽</label>
-                        <div class="custom-file-upload">
-                            <label for="universityLogo" class="btn-file-upload">选择文件</label>
-                            <input type="file" id="universityLogo" accept="image/*" data-bind-to="logo">
-                            <span class="file-chosen-text">未选择文件</span>
-                        </div>
-                    </div>
+                    <div class="form-group"><label for="universityName">大学名称 (本地语言)</label><input type="text" id="universityName" data-bind-to="universityName"></div>
+                    <div class="form-group"><label for="universityNameEn">University Name (EN)</label><input type="text" id="universityNameEn" data-bind-to="universityNameEn"></div>
+                    <div class="form-group"><label for="universityLogo">大学校徽</label><div class="custom-file-upload"><label for="universityLogo" class="btn-file-upload">选择文件</label><input type="file" id="universityLogo" accept="image/*" data-bind-to="logo"><span class="file-chosen-text">未选择文件</span></div></div>
                 </div>
-
                 <div id="common-student-section" class="form-section">
                     <h2 class="form-section-title">通用学生信息</h2>
-                    <div class="form-group">
-                        <label for="studentName">学生姓名</label>
-                        <input type="text" id="studentName" data-bind-to="studentName">
-                    </div>
-                    <div class="form-group">
-                        <label for="passportNumber">护照号</label>
-                        <input type="text" id="passportNumber" data-bind-to="passportNumber">
-                    </div>
-                    <div class="form-group">
-                        <label for="studentId">学号 / 学生证号</label>
-                        <input type="text" id="studentId" data-bind-to="studentId">
-                    </div>
-                    <div class="form-group">
-                        <label for="faculty">院系</label>
-                        <input type="text" id="faculty" data-bind-to="faculty">
-                    </div>
-                    <div class="form-group">
-                        <label for="specialty">专业</label>
-                        <input type="text" id="specialty" data-bind-to="specialty">
-                    </div>
-                    <div class="form-group">
-                        <label for="enrollmentDate">入学日期</label>
-                        <input type="date" id="enrollmentDate" data-bind-to="enrollmentDate">
-                    </div>
-                    <div class="form-group">
-                        <label for="studyPeriod">学习年限 (年)</label>
-                        <input type="text" id="studyPeriod" data-bind-to="studyPeriod">
-                    </div>
+                    <div class="form-group"><label for="studentName">学生姓名</label><input type="text" id="studentName" data-bind-to="studentName"></div>
+                    <div class="form-group"><label for="passportNumber">护照号</label><input type="text" id="passportNumber" data-bind-to="passportNumber"></div>
+                    <div class="form-group"><label for="studentId">学号 / 学生证号</label><input type="text" id="studentId" data-bind-to="studentId"></div>
+                    <div class="form-group"><label for="faculty">院系</label><input type="text" id="faculty" data-bind-to="faculty"></div>
+                    <div class="form-group"><label for="specialty">专业</label><input type="text" id="specialty" data-bind-to="specialty"></div>
+                    <div class="form-group"><label for="enrollmentDate">入学日期</label><input type="date" id="enrollmentDate" data-bind-to="enrollmentDate"></div>
+                    <div class="form-group"><label for="studyPeriod">学习年限 (年)</label><input type="text" id="studyPeriod" data-bind-to="studyPeriod"></div>
                 </div>
-
-                <div class="form-separator"></div>
-                
-                <div id="document-selector" class="document-selector"></div>
-                
-                <div id="document-form-container"></div>
-
-                <div id="action-buttons" class="button-group">
-                    <button class="btn-primary" id="preview-btn">更新预览</button>
-                    <button class="btn-success" id="print-btn">打印</button>
-                </div>
-            </div>
-
-            </div>
-        
-        <div class="preview-area">
-            <div id="preview-container">
-                <div class="placeholder-text">请先选择一个模板和证件类型</div>
+                <div class="form-separator"></div><div id="document-selector" class="document-selector"></div><div id="document-form-container"></div>
+                <div id="action-buttons" class="button-group"><button class="btn-primary" id="preview-btn">更新预览</button><button class="btn-success" id="print-btn">打印</button></div>
             </div>
         </div>
+        <div class="preview-area"><div id="preview-container"><div class="placeholder-text">请先选择一个模板和证件类型</div></div></div>
     </div>
-
     <script src="/assets/js/toast.js"></script>
     <script src="/assets/js/resource-loader.js" defer></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/indonesia-demo-loader.js"></script>
 </body>
 </html>

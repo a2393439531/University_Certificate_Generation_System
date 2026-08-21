@@ -1,14 +1,30 @@
 {
-    "countries": [
-        {
-            "name": "吉尔吉斯斯坦",
-            "id": "kyrgyzstan",
-            "universities": [
-                {
-                    "name": "帕米尔大学",
-                    "id": "pamir_university"
-                }
-            ]
-        }
-    ]
+  "countries": [
+    {
+      "name": "吉尔吉斯斯坦",
+      "id": "kyrgyzstan",
+      "universities": [{"name":"帕米尔大学","id":"pamir_university"}]
+    },
+    {
+      "name": "印度尼西亚",
+      "id": "indonesia",
+      "universities": [
+        {"name":"印度尼西亚大学 · Universitas Indonesia","id":"universitas_indonesia"},
+        {"name":"加查马达大学 · Universitas Gadjah Mada","id":"universitas_gadjah_mada"},
+        {"name":"万隆理工学院 · Institut Teknologi Bandung","id":"institut_teknologi_bandung"},
+        {"name":"艾尔朗加大学 · Universitas Airlangga","id":"universitas_airlangga"},
+        {"name":"茂物农业大学 · Institut Pertanian Bogor","id":"institut_pertanian_bogor"},
+        {"name":"泗水理工学院 · Institut Teknologi Sepuluh Nopember","id":"institut_teknologi_sepuluh_nopember"},
+        {"name":"迪波内哥罗大学 · Universitas Diponegoro","id":"universitas_diponegoro"},
+        {"name":"巴查查兰大学 · Universitas Padjadjaran","id":"universitas_padjadjaran"},
+        {"name":"布拉维加亚大学 · Universitas Brawijaya","id":"universitas_brawijaya"},
+        {"name":"哈桑努丁大学 · Universitas Hasanuddin","id":"universitas_hasanuddin"},
+        {"name":"斯布拉斯·马勒大学 · Universitas Sebelas Maret","id":"universitas_sebelas_maret"},
+        {"name":"安达拉斯大学 · Universitas Andalas","id":"universitas_andalas"},
+        {"name":"日惹国立大学 · Universitas Negeri Yogyakarta","id":"universitas_negeri_yogyakarta"},
+        {"name":"印度尼西亚教育大学 · Universitas Pendidikan Indonesia","id":"universitas_pendidikan_indonesia"},
+        {"name":"玛琅国立大学 · Universitas Negeri Malang","id":"universitas_negeri_malang"}
+      ]
+    }
+  ]
 }
