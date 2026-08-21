@@ -1,0 +1,12 @@
+{
+  "name": "Indonesia University Demonstration Template",
+  "demo": true,
+  "watermark": "SAMPLE · DEMONSTRATION ONLY · NOT AN OFFICIAL DOCUMENT",
+  "universityInfo": {"universityName":"Indonesia University Demonstration","universityNameEn":"INDONESIA UNIVERSITY DEMONSTRATION"},
+  "studentInfoDefaults": {"studentName":"Demo Student","passportNumber":"DEMO-PASSPORT","studentId":"DEMO-0001","faculty":"Demonstration Faculty","specialty":"Demonstration Program","enrollmentDate":"2026-09-01","studyPeriod":"4"},
+  "documents": {
+    "student_card":{"name":"学生证（演示）","available":true,"defaults":{"demoNumber":"DEMO-001"}},
+    "admission_letter":{"name":"录取通知书（演示）","available":true,"defaults":{"demoNumber":"DEMO-001","demoDate":"2026-08-21"}},
+    "enrollment_cert":{"name":"在读证明（演示）","available":true,"defaults":{"demoNumber":"DEMO-001","demoDate":"2026-08-21"}}
+  }
+}
